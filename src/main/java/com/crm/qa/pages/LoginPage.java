@@ -12,48 +12,63 @@ public class LoginPage extends TestBase {
 	// Page Factory - OR:
 	@FindBy(name = "username")
 	WebElement username;
-
 	@FindBy(name = "password")
 	WebElement password;
-
 	@FindBy(xpath = "//input[@type='submit']")
 	WebElement loginBtn;
 
 	@FindBy(xpath = "//button[contains(text(),'Sign Up')]")
 	WebElement signUpBtn;
-
 	@FindBy(xpath = "//img[contains(@class,'img-responsive')]")
 	WebElement crmLogo;
-	
 	@FindBy(linkText = "Forgot Password?")
 	WebElement forgotPassLink;
-
 	@FindBy(xpath = "//a[contains(text(),'Features')]")
 	WebElement featuresLink;
-
 	@FindBy(xpath = "//a[contains(text(),'Sign Up')]")
 	WebElement signUpLink;
-
 	@FindBy(xpath = "//a[contains(text(),'Pricing')]")
 	WebElement pricingLink;
-
 	@FindBy(xpath = "//a[contains(text(),'Customers')]")
 	WebElement customersLink;
-
 	@FindBy(xpath = " //a[contains(text(),'Contact')]")
 	WebElement contactLink;
 
 	@FindBy(xpath = "//*[@class='fa fa-users skrollable skrollable-after']")
 	WebElement CRMtextLogo;
-
 	@FindBy(xpath = "//*[@class='fa fa-money skrollable skrollable-after']")
 	WebElement salesPipelineLogo;
-
 	@FindBy(xpath = "//*[@class='fa fa-envelope skrollable skrollable-after']")
-	WebElement marketingAutomation;
-
+	WebElement marketingAutomationlogo;
 	@FindBy(xpath = "//*[@class='fa fa-mobile-phone skrollable skrollable-after']")
-	WebElement getMobile;
+	WebElement getMobilelogo;
+
+	@FindBy(xpath = "//*[contains(text(),'CRM Contacts')]")
+	WebElement CRMText;
+	@FindBy(xpath = "//*[contains(text(),'Sales Pipeline')]")
+	WebElement salesPipelineText;
+	@FindBy(xpath = "//*[contains(text(),'Marketing Automation')]")
+	WebElement marketingAutomationText;
+	@FindBy(xpath = "//*[contains(text(),'Get Mobile')]")
+	WebElement getMobileText;
+
+	@FindBy(xpath = "//*[contains(text(),'TRACK EVERYTHING INSTANTLY')]")
+	WebElement CRMHeaderText;
+	@FindBy(xpath = "//*[contains(text(),'SALES PIPELINE DASHBOARD')]")
+	WebElement salesPipelineHeaderText;
+	@FindBy(xpath = "//*[contains(text(),'UNLIMITED CAMPAIGNS')]")
+	WebElement marketingAutomationHeaderText;
+	@FindBy(xpath = "//*[contains(text(),'ANY DEVICE')]")
+	WebElement getMobileHeaderText;
+
+	@FindBy(xpath = "//*[@id=\"services\"]/div/div/div[1]/p/small")
+	WebElement CRMContactsDescription;
+	@FindBy(xpath = "//*[@id=\"services\"]/div/div/div[2]/p/small")
+	WebElement salesPipelineDescription;
+	@FindBy(xpath = "//*[@id=\"services\"]/div/div/div[3]/p/small")
+	WebElement marketingAutomationDescription;
+	@FindBy(xpath = "//*[@id=\"services\"]/div/div/div[4]/p/small")
+	WebElement getMobileDescription;
 
 	// Initializing the Page Objects:
 	public LoginPage() {
@@ -67,17 +82,6 @@ public class LoginPage extends TestBase {
 		}
 		return true;
 
-	}
-
-	public boolean ValidateCRMlogos() {
-		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0,400)");
-		if (CRMtextLogo.isDisplayed() && salesPipelineLogo.isDisplayed() && marketingAutomation.isDisplayed()
-				&& getMobile.isDisplayed()) {
-			System.out.println("All Links are Present on LoginPage");
-		}
-		//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", loginBtn);
-		return true;
 	}
 
 	// Actions:
@@ -98,11 +102,65 @@ public class LoginPage extends TestBase {
 	}
 
 	public SignUpPage clickSignUpLink() {
-		
+
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].click();", signUpLink);
 
 		return new SignUpPage();
+	}
+
+	public boolean validateCRMlogos() {
+
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,400)");
+		if (CRMtextLogo.isDisplayed() && salesPipelineLogo.isDisplayed() && marketingAutomationlogo.isDisplayed()
+				&& getMobilelogo.isDisplayed()) {
+			System.out.println("All Links are Present on LoginPage");
+		}
+		return true;
+	}
+
+	public boolean validateCRMlogosText() {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,400)");
+		if (CRMText.isDisplayed() && salesPipelineText.isDisplayed() && marketingAutomationText.isDisplayed()
+				&& getMobileText.isDisplayed()) {
+			System.out.println("All logo's texts are Present on LoginPage");
+		}
+		// ((JavascriptExecutor)
+		// driver).executeScript("arguments[0].scrollIntoView(true);", loginBtn);
+		return true;
+	}
+
+	public boolean validateCRMHeaderText() {
+
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,400)");
+		if (CRMHeaderText.isDisplayed() && salesPipelineHeaderText.isDisplayed()
+				&& marketingAutomationHeaderText.isDisplayed() && getMobileHeaderText.isDisplayed()) {
+			System.out.println("All Links Header Text is Present on LoginPage");
+		}
+		return true;
+	}
+
+	public String validatCRM_Description() {
+		return CRMContactsDescription.getText();
+
+	}
+
+	public String salesPipeline_Description() {
+		return salesPipelineDescription.getText();
+
+	}
+
+	public String marketingAutomation_Description() {
+		return marketingAutomationDescription.getText();
+
+	}
+
+	public String getMobile_Description() {
+		return getMobileDescription.getText();
+
 	}
 
 	public HomePage login(String un, String pwd) {
