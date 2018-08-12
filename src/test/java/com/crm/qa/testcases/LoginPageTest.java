@@ -108,7 +108,7 @@ public class LoginPageTest extends TestBase {
 	@Test(priority = 12,groups="LoginPage Logo Details")
 	public void validateGetMobileDescriptionTest() {
 		System.out.println(loginPage.getMobile_Description());
-		String expectedDescription = "on any device – just fire up your mobile browser and connect to our secure website. "
+		String expectedDescription = "Work on any device – just fire up your mobile browser and connect to our secure website. "
 				+ "Bookmark Free CRM so you can have quick access every time; over 20% of our users are "
 				+ "on mobile tablets and smartphones.";
 
