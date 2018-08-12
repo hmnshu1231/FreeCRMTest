@@ -55,14 +55,14 @@ public class HomePage extends TestBase {
 //		return new TasksPage();
 //	}
 	
-	public NewContactsPage clickOnNewContactLink() throws InterruptedException{
+	public ContactsPage clickOnNewContactLink() throws InterruptedException{
 		Actions action = new Actions(driver);
 		action.moveToElement(contactsLink).build().perform();
 		newContactLink.click();
 //		JavascriptExecutor js = (JavascriptExecutor) driver;
 //		js.executeScript("arguments[0].click();", newContactLink);
 		
-		return new NewContactsPage();
+		return new ContactsPage();
 		
 	}
 }
