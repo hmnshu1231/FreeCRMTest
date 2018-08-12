@@ -17,7 +17,6 @@ import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
-import com.crm.qa.pages.NewContactsPage;
 import com.crm.qa.util.TestUtil;
 
 public class ContactsPageTest extends TestBase {
@@ -26,7 +25,6 @@ public class ContactsPageTest extends TestBase {
 	HomePage homePage;
 	TestUtil testUtil;
 	ContactsPage contactsPage;
-	NewContactsPage newContactsPage;
 	String sheetName = "contacts";
 
 	public ContactsPageTest() {
@@ -76,7 +74,7 @@ public class ContactsPageTest extends TestBase {
 	public void validateCreateNewContact(String title, String firstName, String lastName, String company) {
 		try {
 
-			newContactsPage = homePage.clickOnNewContactLink();
+			contactsPage = homePage.clickOnNewContactLink();
 
 			contactsPage.createNewContact(title, firstName, lastName, company);
 			contactsPage = homePage.clickOnContactsLink();
