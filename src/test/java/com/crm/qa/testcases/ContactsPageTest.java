@@ -41,7 +41,7 @@ public class ContactsPageTest extends TestBase {
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testUtil.switchToFrame();
-		contactsPage = homePage.clickOnContactsLink();
+		//contactsPage = homePage.clickOnContactsLink();
 	}
 
 	@Test(priority = 1, enabled = true)
@@ -71,16 +71,13 @@ public class ContactsPageTest extends TestBase {
 	}
 
 	@Test(priority = 2, dataProvider = "CRMTestData", enabled = true)
-	public void validateCreateNewContact(String title, String firstName, String lastName, String company) {
-		try {
-
+	public void validateCreateNewContact(String title, String firstName, String lastName, String company) throws InterruptedException {
+		
 			contactsPage = homePage.clickOnNewContactLink();
 
 			contactsPage.createNewContact(title, firstName, lastName, company);
 			contactsPage = homePage.clickOnContactsLink();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		
 
 	}
 

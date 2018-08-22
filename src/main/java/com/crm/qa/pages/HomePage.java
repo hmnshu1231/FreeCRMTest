@@ -1,5 +1,6 @@
 package com.crm.qa.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
@@ -16,10 +17,10 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(text(),'Contacts')]")
 	WebElement contactsLink;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'New Contact')]")
 	WebElement newContactLink;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'Deals')]")
 	WebElement dealsLink;
 
@@ -30,21 +31,20 @@ public class HomePage extends TestBase {
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
-	
-	public String verifyHomePageTitle(){
+
+	public String verifyHomePageTitle() {
 		return driver.getTitle();
 	}
-	
-	
-	public boolean verifyCorrectUserName(){
+
+	public boolean verifyCorrectUserName() {
 		return userNameLabel.isDisplayed();
 	}
-	
-	public ContactsPage clickOnContactsLink(){
+
+	public ContactsPage clickOnContactsLink() {
 		contactsLink.click();
 		return new ContactsPage();
 	}
-	
+
 //	public DealsPage clickOnDealsLink(){
 //		dealsLink.click();
 //		return new DealsPage();
@@ -54,17 +54,15 @@ public class HomePage extends TestBase {
 //		tasksLink.click();
 //		return new TasksPage();
 //	}
-	
-	public ContactsPage clickOnNewContactLink() throws InterruptedException{
+
+	public ContactsPage clickOnNewContactLink() throws InterruptedException {
 		Actions action = new Actions(driver);
 		action.moveToElement(contactsLink).build().perform();
-		newContactLink.click();
-//		JavascriptExecutor js = (JavascriptExecutor) driver;
-//		js.executeScript("arguments[0].click();", newContactLink);
-		
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", newContactLink);
+
 		return new ContactsPage();
-		
+
 	}
 }
-	
-	

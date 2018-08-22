@@ -22,8 +22,8 @@ public class TestUtil extends TestBase {
 	public static long PAGE_LOAD_TIMEOUT = 40;
 	public static long IMPLICIT_WAIT = 10;
 
-	public static String TESTDATA_SHEET_PATH = "E:\\AuToMaTiOn\\WorkspaceNew\\FreeCRMTest\\src\\main\\java\\"
-			+ "com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "C:\\Users\\Himanshu\\git\\FreeCRMTest\\src\\main\\java\\com\\"
+			+ "crm\\qa\\testdata\\FreeCrmTestData.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
