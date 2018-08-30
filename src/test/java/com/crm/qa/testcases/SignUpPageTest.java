@@ -2,6 +2,7 @@ package com.crm.qa.testcases;
 
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -30,30 +31,34 @@ public class SignUpPageTest extends TestBase {
 
 	@Test(priority = 1)
 	public void verifySignUpCrmLogoTest() {
+		  Reporter.log("verifySignUpCrmLogoTest");
 		Assert.assertTrue(signUpPage.verifyCrmLogo());
 	}
 
 	@Test(priority = 2)
 	public void verifyEditionTextTest() {
-
+		  Reporter.log("verifyEditionTextTest");
 		Assert.assertTrue(signUpPage.selectEditionDdText());
 	}
 
 	@Test(priority = 3)
 	public void validateSignUpPageTest() throws InterruptedException {
-		signUpPage.selectEditionDd_Id("Free Edition");
+		  Reporter.log("validateSignUpPageTest");
+		  signUpPage.selectEditionDd_Id("Free Edition");
 
 	}
 
 	@Test(priority = 4)
 	public void signUpPageAllFieldsTest() throws InterruptedException {
-		signUpPage.signUpPageAllFields();
+		  Reporter.log("signUpPageAllFieldsTest");
+		  signUpPage.signUpPageAllFields();
 		Thread.sleep(5000);
 	}
 
 	@Test(priority = 5)
 	public void verifySignUpFieldTextTest() {
-		Assert.assertTrue(signUpPage.verifyFieldText());
+		  Reporter.log("verifySignUpFieldTextTest");
+		  Assert.assertTrue(signUpPage.verifyFieldText());
 	}
 
 	@AfterClass

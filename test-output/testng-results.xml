@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="10" passed="10">
+<testng-results skipped="0" failed="1" total="10" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48449" started-at="2018-08-22T15:18:57Z" finished-at="2018-08-22T15:19:45Z">
+  <suite name="Default suite" duration-ms="80227" started-at="2018-08-30T14:36:41Z" finished-at="2018-08-30T14:38:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48449" started-at="2018-08-22T15:18:57Z" finished-at="2018-08-22T15:19:45Z">
+    <test name="Default test" duration-ms="80227" started-at="2018-08-30T14:36:41Z" finished-at="2018-08-30T14:38:02Z">
       <class name="com.crm.qa.testcases.ContactsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="setUp" is-config="true" duration-ms="20950" started-at="2018-08-22T20:48:57Z" finished-at="2018-08-22T20:49:18Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="setUp" is-config="true" duration-ms="31849" started-at="2018-08-30T20:06:41Z" finished-at="2018-08-30T20:07:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactsPageLabel()[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="verifyContactsPageLabel" duration-ms="1430" started-at="2018-08-22T20:49:18Z" finished-at="2018-08-22T20:49:19Z">
+        <test-method status="PASS" signature="verifyContactsPageLabel()[pri:1, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="verifyContactsPageLabel" duration-ms="1693" started-at="2018-08-30T20:07:13Z" finished-at="2018-08-30T20:07:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactsPageLabel -->
-        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="validateCreateNewContact" duration-ms="7628" started-at="2018-08-22T20:49:20Z" data-provider="CRMTestData" finished-at="2018-08-22T20:49:28Z">
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="validateCreateNewContact" duration-ms="8818" started-at="2018-08-30T20:07:16Z" data-provider="CRMTestData" finished-at="2018-08-30T20:07:25Z">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="validateCreateNewContact" duration-ms="4384" started-at="2018-08-22T20:49:28Z" data-provider="CRMTestData" finished-at="2018-08-22T20:49:33Z">
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="validateCreateNewContact" duration-ms="7867" started-at="2018-08-30T20:07:25Z" data-provider="CRMTestData" finished-at="2018-08-30T20:07:33Z">
           <params>
             <param index="0">
               <value>
@@ -67,7 +67,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="validateCreateNewContact" duration-ms="4560" started-at="2018-08-22T20:49:33Z" data-provider="CRMTestData" finished-at="2018-08-22T20:49:37Z">
+        <test-method status="PASS" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="validateCreateNewContact" duration-ms="7704" started-at="2018-08-30T20:07:33Z" data-provider="CRMTestData" finished-at="2018-08-30T20:07:41Z">
           <params>
             <param index="0">
               <value>
@@ -93,15 +93,92 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="selectSingleContactsTest()[pri:3, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="selectSingleContactsTest" duration-ms="1037" started-at="2018-08-22T20:49:37Z" finished-at="2018-08-22T20:49:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSingleContactsTest -->
-        <test-method status="PASS" signature="selectMultipleContactsTest()[pri:4, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="selectMultipleContactsTest" duration-ms="1055" started-at="2018-08-22T20:49:38Z" finished-at="2018-08-22T20:49:39Z">
+        <test-method status="PASS" signature="selectMultipleContactsTest()[pri:3, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="selectMultipleContactsTest" duration-ms="2023" started-at="2018-08-30T20:07:41Z" finished-at="2018-08-30T20:07:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectMultipleContactsTest -->
-        <test-method status="PASS" signature="deleteContactsFromList(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="deleteContactsFromList" duration-ms="148" started-at="2018-08-22T20:49:39Z" data-provider="CRMTestData" finished-at="2018-08-22T20:49:39Z">
+        <test-method status="FAIL" signature="selectSingleContactsTest()[pri:4, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="selectSingleContactsTest" duration-ms="12180" started-at="2018-08-30T20:07:43Z" finished-at="2018-08-30T20:07:55Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Miss Mukta Sharma')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']"}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'HIMANSHU-PC', ip: '192.168.0.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\Himanshu\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: 9f2653a47650dfb5b84a3acf26ab0ebf
+*** Element info: {Using=xpath, value=//a[contains(text(),'Miss Mukta Sharma')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Miss Mukta Sharma')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']"}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'HIMANSHU-PC', ip: '192.168.0.102', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\Himanshu\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: 9f2653a47650dfb5b84a3acf26ab0ebf
+*** Element info: {Using=xpath, value=//a[contains(text(),'Miss Mukta Sharma')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:60)
+	at com.crm.qa.testcases.ContactsPageTest.selectSingleContactsTest(ContactsPageTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSingleContactsTest -->
+        <test-method status="PASS" signature="deleteContactsFromList(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="deleteContactsFromList" duration-ms="176" started-at="2018-08-30T20:07:55Z" data-provider="CRMTestData" finished-at="2018-08-30T20:07:55Z">
           <params>
             <param index="0">
               <value>
@@ -127,7 +204,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteContactsFromList -->
-        <test-method status="PASS" signature="deleteContactsFromList(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="deleteContactsFromList" duration-ms="182" started-at="2018-08-22T20:49:39Z" data-provider="CRMTestData" finished-at="2018-08-22T20:49:40Z">
+        <test-method status="PASS" signature="deleteContactsFromList(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="deleteContactsFromList" duration-ms="240" started-at="2018-08-30T20:07:55Z" data-provider="CRMTestData" finished-at="2018-08-30T20:07:56Z">
           <params>
             <param index="0">
               <value>
@@ -153,7 +230,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteContactsFromList -->
-        <test-method status="PASS" signature="deleteContactsFromList(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="deleteContactsFromList" duration-ms="145" started-at="2018-08-22T20:49:40Z" data-provider="CRMTestData" finished-at="2018-08-22T20:49:40Z">
+        <test-method status="PASS" signature="deleteContactsFromList(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="deleteContactsFromList" duration-ms="152" started-at="2018-08-30T20:07:56Z" data-provider="CRMTestData" finished-at="2018-08-30T20:07:56Z">
           <params>
             <param index="0">
               <value>
@@ -179,11 +256,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteContactsFromList -->
-        <test-method status="PASS" signature="deleteSelectedContacts()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="deleteSelectedContacts" duration-ms="4479" started-at="2018-08-22T20:49:40Z" depends-on-methods="com.crm.qa.testcases.ContactsPageTest.deleteContactsFromList" finished-at="2018-08-22T20:49:44Z">
+        <test-method status="PASS" signature="deleteSelectedContacts()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="deleteSelectedContacts" duration-ms="4731" started-at="2018-08-30T20:07:56Z" depends-on-methods="com.crm.qa.testcases.ContactsPageTest.deleteContactsFromList" finished-at="2018-08-30T20:08:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteSelectedContacts -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@25bbe1b6]" name="tearDown" is-config="true" duration-ms="803" started-at="2018-08-22T20:49:44Z" finished-at="2018-08-22T20:49:45Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactsPageTest@4bec1f0c]" name="tearDown" is-config="true" duration-ms="993" started-at="2018-08-30T20:08:01Z" finished-at="2018-08-30T20:08:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

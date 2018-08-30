@@ -98,6 +98,6 @@ public class ContactsPage extends TestBase {
 		select.selectByVisibleText("Delete Checked");
 		doButton.click();
 		driver.switchTo().alert().accept();
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 	}
 }

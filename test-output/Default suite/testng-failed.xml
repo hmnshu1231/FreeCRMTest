@@ -6,11 +6,7 @@
       <class name="com.crm.qa.testcases.ContactsPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="selectMultipleContactsTest"/>
-          <include name="deleteSelectedContacts"/>
           <include name="tearDown"/>
-          <include name="validateCreateNewContact"/>
-          <include name="deleteContactsFromList"/>
           <include name="selectSingleContactsTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.ContactsPageTest -->

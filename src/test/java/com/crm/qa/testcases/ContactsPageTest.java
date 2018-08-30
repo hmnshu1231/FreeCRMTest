@@ -50,7 +50,7 @@ public class ContactsPageTest extends TestBase {
 		Assert.assertTrue(contactsPage.verifyContactsLabel(), "contacts label is missing on the page");
 	}
 
-	@Test(priority = 4, enabled = true)
+	@Test(priority = 3, enabled = true)
 	public void selectMultipleContactsTest() {
 		contactsPage = homePage.clickOnContactsLink();
 		contactsPage.selectContactsByName("David Cris");
@@ -58,10 +58,10 @@ public class ContactsPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 3, enabled = true)
+	@Test(priority = 4, enabled = true)
 	public void selectSingleContactsTest() {
 		contactsPage = homePage.clickOnContactsLink();
-		contactsPage.selectContactsByName("Mukta Sharma");
+		contactsPage.selectContactsByName("Miss Mukta Sharma");
 	}
 
 	@DataProvider

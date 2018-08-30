@@ -44,10 +44,11 @@ public class TestBase {
 	}
 
 	public static void initialization() {
-		String browserName = prop.getProperty("browser");
+		String browserName = prop.getProperty("Browser");
 
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver","E:\\AuToMaTiOn\\ALL DRIVERS\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",
+					"E:\\AuToMaTiOn\\ALL DRIVERS\\chromedriver_win32\\chromedriver.exe");
 			// ChromeOptions options = new ChromeOptions();
 			// options.addArguments("window-size=1400,800");
 			// options.addArguments("headless");
